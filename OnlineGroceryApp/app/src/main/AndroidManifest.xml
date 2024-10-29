@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.shahzaib.onlinegroceryapp">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Online Grocery App"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            
+            android:name="com.example.shahzaib.onlinegroceryapp.Activities.SplashScreen"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+
+        </activity>
+        <activity
+            android:name="com.example.shahzaib.onlinegroceryapp.Activities.Login"
+
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            
+            android:name="com.example.shahzaib.onlinegroceryapp.Activities.Register"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="stateVisible" />
+        <activity android:name="com.soundcloud.android.crop.CropImageActivity" />
+
+        <activity
+            android:launchMode="singleTask"
+            android:name="com.example.shahzaib.onlinegroceryapp.Activities.HomePage"
+            android:hardwareAccelerated="true"
+            android:label="Online Grocery App"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity android:name="com.example.shahzaib.onlinegroceryapp.Search.SearchViewActivity">
+
+        </activity>
+        <activity
+            android:launchMode="singleTask"
+            android:name="com.example.shahzaib.onlinegroceryapp.CartActivity.Cart">
+
+        </activity>
+        <activity android:name="com.example.shahzaib.onlinegroceryapp.ExpandableRecyclerViewImplementation.ExpandableListing">
+        </activity>
+        <activity android:name="com.example.shahzaib.onlinegroceryapp.Activities.OrderHistory"
+            
+            >
+
+        </activity>
+        <activity
+            android:name="com.example.shahzaib.onlinegroceryapp.Activities.Profile"
+            android:label="Edit Profile"
+            android:windowSoftInputMode="adjustNothing"/>
+
+        <activity android:name="com.example.shahzaib.onlinegroceryapp.Activities.NoInternetConnection" />
+        <activity android:name="com.example.shahzaib.onlinegroceryapp.ForgotPass.EnterEmail" />
+        <activity
+            android:name="com.example.shahzaib.onlinegroceryapp.ForgotPass.UpdatePass"
+            android:label="Password reset" />
+        <activity android:name="com.example.shahzaib.onlinegroceryapp.Activities.More"/>
+        <activity
+            android:name="com.example.shahzaib.onlinegroceryapp.ExpandableRecyclerViewImplementation.CategoryChildListing"
+            android:parentActivityName="com.example.shahzaib.onlinegroceryapp.ExpandableRecyclerViewImplementation.ExpandableListing"/>
+
+        <activity
+            android:name="com.example.shahzaib.onlinegroceryapp.Adress.UserAddress"
+            android:theme="@style/AppTheme2"/>
+
+        <activity
+            android:name="com.example.shahzaib.onlinegroceryapp.Adress.AddAddress"
+            android:theme="@style/AppTheme2"/>
+
+        <activity
+            android:name="com.example.shahzaib.onlinegroceryapp.PaymentGateway.PaymentOptions"
+             />
+        <activity
+            android:name="com.example.shahzaib.onlinegroceryapp.Adress.NavigationAddress"
+            android:theme="@style/AppTheme2"/>
+
+        <activity
+            android:name="com.example.shahzaib.onlinegroceryapp.Activities.AboutUs"
+            android:label="About Us"/>
+    </application>
+
+</manifest>
